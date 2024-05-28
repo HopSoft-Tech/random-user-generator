@@ -27,8 +27,8 @@ The Random User Generator is a web application that fetches and displays random 
 2. **Fetching Data**: When the button is clicked, a request is sent to the Random User API.
 3. **Displaying Data**: The application parses the response and displays the user’s profile information on the screen.
 4. **Background Color**: The background color changes based on the gender of the user.
-   - Female: Lavender
-   - Male: Slategray
+   - Female: pink
+   - Male: steelblue
 
 ## Installation
 
@@ -111,9 +111,9 @@ function displayUser(user) {
   const userDisplay = document.querySelector("#user");
 
   if (user.gender === "female") {
-    document.body.style.backgroundColor = "lavender";
+    document.body.style.backgroundColor = "pink";
   } else {
-    document.body.style.backgroundColor = "slategray";
+    document.body.style.backgroundColor = "steelblue";
   }
 
   userDisplay.innerHTML = `
